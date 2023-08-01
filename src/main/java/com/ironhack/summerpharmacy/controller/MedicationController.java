@@ -1,6 +1,6 @@
 package com.ironhack.summerpharmacy.controller;
 
-import com.ironhack.summerpharmacy.model.Medication;
+import com.ironhack.summerpharmacy.dto.MedicationDto;
 import com.ironhack.summerpharmacy.service.MedicationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -16,13 +16,13 @@ public class MedicationController {
     private final MedicationService medicationService;
 
     @GetMapping
-    public List<Medication> findAll(){
+    public List<MedicationDto> findAll(){
         return medicationService.findAll();
     }
 
     @PostMapping
-    public Medication create(@RequestBody Medication medication){
-        return medicationService.addMedication(medication);
+    public MedicationDto create(@RequestBody MedicationDto medicationDto){
+        return medicationService.addMedication(medicationDto);
     }
 
 
