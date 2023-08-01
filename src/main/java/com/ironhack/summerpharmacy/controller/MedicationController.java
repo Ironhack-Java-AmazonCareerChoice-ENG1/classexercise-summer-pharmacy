@@ -3,6 +3,7 @@ package com.ironhack.summerpharmacy.controller;
 import com.ironhack.summerpharmacy.dto.MedicationDto;
 import com.ironhack.summerpharmacy.service.MedicationService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,8 +22,10 @@ public class MedicationController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public MedicationDto create(@RequestBody MedicationDto medicationDto){
         return medicationService.addMedication(medicationDto);
+
     }
 
 
