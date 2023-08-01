@@ -1,0 +1,14 @@
+### find all
+GET localhost:9090/api/v1/medications
+
+
+### create
+POST localhost:9090/api/v1/medications
+Content-Type: application/json
+
+{
+  "name": "Medi{{$random.alphabetic(10)}}",
+  "description": "{{$random.alphabetic(50)}}",
+  "price": "{{$random.float(50)}}",
+  "manufacturer": "{{$random.alphabetic(10)}} INC"
+}
