@@ -40,4 +40,16 @@ public class MedicationService {
         log.info("Medication created: " + medication);
         return mapper.toDto(medication);
     }
+
+    public MedicationDto updateMedication(Long id, MedicationDto medicationDto) {
+        Medication entity = medicationRepository.findById(id).orElseThrow();
+        entity = mapper.toEntity(medicationDto);
+        entity.setId(id); // no funny business with ids included in RequestBody
+        medicationRepository.save(entity);
+        return mapper.toDto(entity);
+    }
+
+    public void deleteMedication(Long id) {
+        medicationRepository.deleteById(id);
+    }
 }

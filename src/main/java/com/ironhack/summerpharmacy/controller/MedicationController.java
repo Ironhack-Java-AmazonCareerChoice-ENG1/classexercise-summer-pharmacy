@@ -17,17 +17,26 @@ public class MedicationController {
     private final MedicationService medicationService;
 
     @GetMapping
-    public List<MedicationDto> findAll(){
+    public List<MedicationDto> findAll() {
         return medicationService.findAll();
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public MedicationDto create(@RequestBody MedicationDto medicationDto){
+    public MedicationDto create(@RequestBody MedicationDto medicationDto) {
         return medicationService.addMedication(medicationDto);
 
     }
 
+    @PutMapping("/{id}")
+    public MedicationDto update(@PathVariable Long id, @RequestBody MedicationDto medicationDto) {
+        return medicationService.updateMedication(id, medicationDto);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        medicationService.deleteMedication(id);
+    }
 
 
 }
