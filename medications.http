@@ -12,3 +12,27 @@ Content-Type: application/json
   "price": "{{$random.float(50)}}",
   "manufacturer": "{{$random.alphabetic(10)}} INC"
 }
+
+### incomplete create
+POST localhost:9090/api/v1/medications
+Content-Type: application/json
+
+{
+  "name": "Medi{{$random.alphabetic(10)}}",
+  "description": "{{$random.alphabetic(50)}}",
+  "manufacturer": "Novartis"
+}
+
+### update
+PUT localhost:9090/api/v1/medications/1
+Content-Type: application/json
+
+{
+  "name": "Tramadol",
+  "description": "Strong stuff",
+  "price": 40.05,
+  "manufacturer": "Novartis"
+}
+
+### delete
+DELETE http://localhost:9090/api/v1/medications/1

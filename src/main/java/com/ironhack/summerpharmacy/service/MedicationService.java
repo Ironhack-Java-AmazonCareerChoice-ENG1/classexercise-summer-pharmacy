@@ -2,6 +2,7 @@ package com.ironhack.summerpharmacy.service;
 
 
 import com.ironhack.summerpharmacy.dto.MedicationDto;
+import com.ironhack.summerpharmacy.exceptions.EntityNotFoundException;
 import com.ironhack.summerpharmacy.mapper.MedicationMapper;
 import com.ironhack.summerpharmacy.model.Medication;
 import com.ironhack.summerpharmacy.repository.MedicationRepository;
@@ -42,8 +43,10 @@ public class MedicationService {
     }
 
     public MedicationDto updateMedication(Long id, MedicationDto medicationDto) {
-        Medication entity = medicationRepository.findById(id).orElseThrow();
-        entity = mapper.toEntity(medicationDto);
+        if(!medicationRepository.existsById(id)) {
+            throw new EntityNotFoundException("No medication with id " + id);
+        }
+        Medication entity = mapper.toEntity(medicationDto);
         entity.setId(id); // no funny business with ids included in RequestBody
         medicationRepository.save(entity);
         return mapper.toDto(entity);
