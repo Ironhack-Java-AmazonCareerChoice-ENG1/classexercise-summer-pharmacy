@@ -8,7 +8,9 @@ import com.ironhack.summerpharmacy.model.Medication;
 import com.ironhack.summerpharmacy.repository.MedicationRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,5 +56,11 @@ public class MedicationService {
 
     public void deleteMedication(Long id) {
         medicationRepository.deleteById(id);
+    }
+
+    public MedicationDto findById(Long id) {
+        return mapper.toDto(medicationRepository.findById(id)
+                .orElseThrow( ()->new ResponseStatusException(
+                        HttpStatus.NOT_FOUND, "Medication with id " + id + " not found.")));
     }
 }

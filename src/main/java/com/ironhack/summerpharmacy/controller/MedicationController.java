@@ -22,6 +22,11 @@ public class MedicationController {
         return medicationService.findAll();
     }
 
+    @GetMapping("/{id}")
+    public MedicationDto findById(@PathVariable Long id) {
+        return medicationService.findById(id);
+    }
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public MedicationDto create(@RequestBody @Valid MedicationDto medicationDto) {
