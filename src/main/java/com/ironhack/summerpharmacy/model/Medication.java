@@ -5,11 +5,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.*;
+import jakarta.persistence.ManyToMany;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 @Entity
 @Data
@@ -28,6 +31,9 @@ public class Medication {
 
     private String manufacturer;
 
+    @ManyToMany(mappedBy = "medications")
+    private List<Order> orders;
+
     @CreationTimestamp
     private ZonedDateTime createdAt;
 
@@ -41,5 +47,16 @@ public class Medication {
         this.manufacturer = manufacturer;
     }
 
-
+    @Override
+    public String toString() {
+        return "Medication{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", createdAt=" + createdAt +
+                ", lastUpdated=" + lastUpdated +
+                '}';
+    }
 }
