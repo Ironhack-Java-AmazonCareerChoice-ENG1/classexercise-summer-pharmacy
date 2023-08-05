@@ -1,0 +1,193 @@
+POST http://localhost:9090/api/v1/medications
+Content-Type: application/json
+Content-Length: 131
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "MediUWvUwmhYmx",
+  "description": "JekmgrHboSWBkjnTkOEXVTQFcDaUOokdnkiRxktpgNiSaeFvUe",
+  "manufacturer": "Novartis"
+}
+
+<> 2023-08-04T121226.201.json
+
+###
+
+POST http://localhost:9090/api/v1/medications
+Content-Type: application/json
+Content-Length: 126
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "MediRrldvPcAul",
+  "description": "zrviYLWoAoTfbgLzRrYNIVyxiexgsjPahJNxfiBwpPHsDQXufH",
+  "price": "14.3777075"
+}
+
+<> 2023-08-04T121150.400.json
+
+###
+
+POST http://localhost:9090/api/v1/medications
+Content-Type: application/json
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "MediYkfvKGgfye",
+  "description": "GKygzlTervXQHqVSMEDsMvcfAKTKcesIOFGRhJmAWCVkPBMCEW",
+  "price": "9.505087",
+  "manufacturer": "jsyAsOuDhv INC"
+}
+
+<> 2023-08-04T121139.201.json
+
+###
+
+POST http://localhost:9090/api/v1/medications
+Content-Type: application/json
+Content-Length: 161
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "MediAJAVtXHFiX",
+  "description": "YSuIbPyPdsGCUFKGvQIpKeiZAsEbHYWARreQJymFCknukBlEFl",
+  "price": "22.563463",
+  "manufacturer": "YyPciBczXg INC"
+}
+
+<> 2023-08-04T121022.500.json
+
+###
+
+POST http://localhost:9090/api/v1/medications
+Content-Type: application/json
+Content-Length: 125
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "MedisoQzWIxHeP",
+  "description": "WsZawjJykmDTyYLCcDoEfBsDbzRQqkbfdeSuJMAKudtHAsdBtk",
+  "price": "42.327873"
+}
+
+<> 2023-08-04T120932.500.json
+
+###
+
+GET http://localhost:9090/api/v1/medications
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-04T120649.200.json
+
+###
+
+DELETE http://localhost:9090/api/v1/medications/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:9090/api/v1/medications
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-04T120548.200.json
+
+###
+
+PUT http://localhost:9090/api/v1/medications/1
+Content-Type: application/json
+Content-Length: 105
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Tramadol",
+  "description": "Strong stuff",
+  "price": 40.05,
+  "manufacturer": "Novartis"
+}
+
+<> 2023-08-04T120536.200.json
+
+###
+
+POST http://localhost:9090/api/v1/medications
+Content-Type: application/json
+Content-Length: 161
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "MediAJacMvcFYW",
+  "description": "SMucvPyHClrnGtQeQTkKnOlNjmHTycMieQxgAphwRtRWndoSrY",
+  "price": "2.8088033",
+  "manufacturer": "XBRkrqVLGg INC"
+}
+
+<> 2023-08-04T120523.201.json
+
+###
+
+POST http://localhost:9090/api/v1/medications
+Content-Type: application/json
+Content-Length: 160
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "MediJlbzfnFFJn",
+  "description": "MvxCFtKCzyYjapgsEXcBptfyUBmpxEAFJpIkQVjeDNMclKTUxW",
+  "price": "49.61331",
+  "manufacturer": "mUWSyHwheF INC"
+}
+
+<> 2023-08-01T212713.201.json
+
+###
+
+GET http://localhost:9090/api/v1/medications
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-08-01T211940.200.json
+
+###
+
+POST http://localhost:9090/api/v1/medications
+Content-Type: application/json
+Content-Length: 161
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "MediobOCDCUtYr",
+  "description": "HRdDbNQkfzSAlUvsKxiIjvOVRviHzrNLQuZZtDBdEdkksPfTvm",
+  "price": "23.861101",
+  "manufacturer": "gglZQFRCwQ INC"
+}
+
+<> 2023-08-01T211930.200.json
+
+###
+
