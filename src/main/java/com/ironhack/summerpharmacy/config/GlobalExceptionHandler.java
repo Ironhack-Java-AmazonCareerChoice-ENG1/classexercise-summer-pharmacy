@@ -41,7 +41,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(EntityNotFoundException.class)
     //@ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ResponseEntity<?> handleNoSuchBookException(final EntityNotFoundException ex,
+    public ResponseEntity<?> handleEntityNotFoundException(final EntityNotFoundException ex,
                                                        final WebRequest request) {
         var errors = new HashMap<String, String>();
         errors.put("message", ex.getMessage());
