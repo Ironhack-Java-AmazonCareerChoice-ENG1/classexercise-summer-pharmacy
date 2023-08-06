@@ -1,7 +1,6 @@
 package com.ironhack.summerpharmacy.model;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.MappedSuperclass;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.LastModifiedBy;
