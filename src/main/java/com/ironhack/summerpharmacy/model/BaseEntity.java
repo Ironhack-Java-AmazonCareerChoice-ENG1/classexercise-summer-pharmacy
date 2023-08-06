@@ -6,7 +6,7 @@ import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.LastModifiedBy;
 
-@Data @MappedSuperclass
+@Data
 public class BaseEntity {
     @Column(name = "created_by", nullable = false)
     @CreatedBy
