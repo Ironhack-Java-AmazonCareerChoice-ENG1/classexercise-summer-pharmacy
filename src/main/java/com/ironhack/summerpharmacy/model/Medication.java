@@ -17,7 +17,7 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
-public class Medication {
+public class Medication extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
