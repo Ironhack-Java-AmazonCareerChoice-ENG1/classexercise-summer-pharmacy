@@ -1,4 +1,4 @@
-package com.ironhack.summerpharmacy.dto;
+package com.ironhack.summerpharmacy.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -1,4 +1,4 @@
-package com.ironhack.summerpharmacy.dto;
+package com.ironhack.summerpharmacy.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

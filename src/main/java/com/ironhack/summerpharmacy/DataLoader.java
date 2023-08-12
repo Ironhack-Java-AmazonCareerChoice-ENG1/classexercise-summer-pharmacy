@@ -1,7 +1,7 @@
 package com.ironhack.summerpharmacy;
 
-import com.ironhack.summerpharmacy.dto.Child;
 import com.ironhack.summerpharmacy.mapper.ChildMapper;
+import com.ironhack.summerpharmacy.model.Child;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;

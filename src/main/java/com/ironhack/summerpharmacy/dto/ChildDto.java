@@ -12,5 +12,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ChildDto extends FatherDto {
     private String hobby;
+
+    @Override
+    public String toString() {
+        return "ChildDto{" +
+                "hobby='" + hobby + '\'' +
+                "} " + super.toString();
+    }
 }
 
