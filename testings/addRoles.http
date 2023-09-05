@@ -1,0 +1,7 @@
+# @no-cookie-jar
+POST localhost:8080/api/login/roles
+Content-Type: application/json
+
+{
+  "name":"ROLE_USER"
+}

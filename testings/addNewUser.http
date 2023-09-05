@@ -1,0 +1,23 @@
+# @no-cookie-jar
+POST localhost:8080/api/v1/customer
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjpbXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2FwaS9sb2dpbiIsImV4cCI6MTY5MzM0NjE4N30.bCIV8PipMAcH4QZDAS-IMczXlXLKCJ-PNROBUP38o3E
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "username": "Smart",
+  "email": "user@yahoo.com",
+  "password": "12345",
+  "birthdate": "2-05-2000",
+  "sex": "Male",
+  "selectCoin": "€10000 Coins",
+  "currentAddress": {
+    "streetAddress": "Shopping Mall Road ",
+    "city": "Madrid",
+    "postalCode": "33735"
+  },
+  "minimumOrderValue": 10.00,
+  "role": {
+    "roleName": "ADMIN"
+  }
+}
